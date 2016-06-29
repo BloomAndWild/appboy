@@ -17,7 +17,7 @@ module Appboy
       @connection ||= Faraday.new(url: 'https://api.appboy.com') do |connection|
         connection.request :json
         connection.response :json,  content_type: 'application/json'
-        connection.adapter Faraday.default_adapter
+        connection.adapter :httpclient
       end
     end
   end
