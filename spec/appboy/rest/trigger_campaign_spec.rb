@@ -7,10 +7,12 @@ describe Appboy::REST::TriggerCampaign do
     {
       app_group_id: :app_group_id,
       campaign_id: :campaign_id,
-      recipients: {
-        external_user_ids: :external_user_ids,
-      },
-      trigger_properties: :trigger_properties,
+      recipients: [
+        {
+          external_user_ids: :external_user_ids,
+          trigger_properties: :trigger_properties,
+        },
+      ]
     }
   end
 
