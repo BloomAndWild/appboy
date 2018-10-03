@@ -9,7 +9,7 @@ describe Appboy::REST::TriggerCampaign do
       campaign_id: :campaign_id,
       recipients: [
         {
-          external_user_ids: :external_user_ids,
+          external_user_id: :external_user_id,
           trigger_properties: :trigger_properties,
         },
       ]
@@ -30,7 +30,7 @@ describe Appboy::REST::TriggerCampaign do
     subject.perform(
       app_group_id,
       campaign_id: :campaign_id,
-      external_user_ids: :external_user_ids,
+      external_user_id: :external_user_id,
       trigger_properties: :trigger_properties,
     )
   end
