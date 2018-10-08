@@ -5,6 +5,7 @@ require 'appboy/endpoints/send_messages'
 require 'appboy/endpoints/schedule_messages'
 require 'appboy/endpoints/email'
 require 'appboy/endpoints/trigger_campaign'
+require 'appboy/endpoints/campaign_details'
 
 module Appboy
   class API
